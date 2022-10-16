@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: 2022 Severen Redwood <severen@shrike.me>
+# SPDX-License-Identifier: CC0-1.0
+
+[build]
+command = "npm run build"
+publish = "build"
