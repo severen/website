@@ -6,6 +6,6 @@
   import "../app.css";
 </script>
 
-<main class="prose mx-auto p-4 lg:prose-xl">
+<main class="prose mx-auto p-4 dark:prose-invert lg:prose-xl">
   <slot />
 </main>
