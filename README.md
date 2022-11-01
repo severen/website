@@ -1,5 +1,5 @@
 <!--
-  SPDX-FileCopyrightText: 2022 Severen Redwood <severen@shrike.me>
+  SPDX-FileCopyrightText: 2022 Severen Redwood <me@severen.dev>
   SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
