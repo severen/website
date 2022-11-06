@@ -7,11 +7,19 @@
   <title>Severen Redwood</title>
 </svelte:head>
 
-<h1>Hello, World</h1>
-<p>For now, this website is a placeholder. Come back later!</p>
-<p>You can contact me at <a href="mailto:me@severen.dev">me@severen.dev</a></p>
+<h1>Hello, World!</h1>
+<p>For now, this website is only a placeholder. Come back later!</p>
+<p>You can contact me...</p>
+<ul>
+  <li>...via email: <a href="mailto:me@severen.dev">me@severen.dev</a></li>
+  <li>...via Matrix: @severen:mtrx.nz</li>
+  <li>
+    ...via Mastodon:
+    <a rel="me" href="https://snabelen.no/@severen">@severen@snabelen.no</a>
+  </li>
+</ul>
 <p>
   You may also be interested in my
   <a href="https://github.com/severen">GitHub profile</a>, or perhaps even my
-  <a href="https://linkedin.com/in/severen">LinkedIn profile</a>...
+  <a href="https://linkedin.com/in/severen">LinkedIn profile</a>!
 </p>
