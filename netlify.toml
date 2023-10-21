@@ -2,5 +2,5 @@
 # SPDX-License-Identifier: CC0-1.0
 
 [build]
-command = "npm run build"
+command = "pnpm run build"
 publish = "build"
