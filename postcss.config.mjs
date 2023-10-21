@@ -3,9 +3,10 @@
  * SPDX-License-Identifier: CC0-1.0
  */
 
-const tailwindcss = require("tailwindcss");
-const autoprefixer = require("autoprefixer");
+import tailwindcss from "tailwindcss";
+import autoprefixer from "autoprefixer";
 
-module.exports = {
+/** @type {import("postcss-load-config").Config} */
+export default {
   plugins: [tailwindcss(), autoprefixer],
 };

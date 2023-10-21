@@ -3,14 +3,15 @@
  * SPDX-License-Identifier: CC0-1.0
  */
 
-const config = {
+import typography from "@tailwindcss/typography";
+
+/** @type {import("tailwindcss").Config} */
+export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
 
   theme: {
     extend: {},
   },
 
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [typography],
 };
-
-module.exports = config;
