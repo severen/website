@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-netlify": "^2.0.8",
-    "@sveltejs/kit": "^1.26.0",
+    "@sveltejs/kit": "^1.27.2",
     "@tailwindcss/typography": "^0.5.10",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
