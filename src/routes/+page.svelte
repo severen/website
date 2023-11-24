@@ -1,5 +1,5 @@
 <!--
-  SPDX-FileCopyrightText: 2022 Severen Redwood <me@severen.dev>
+  SPDX-FileCopyrightText: 2022 Severen Redwood <sev@severen.dev>
   SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 
@@ -11,7 +11,7 @@
 <p>For now, this website is only a placeholder. Come back later!</p>
 <p>You can contact me...</p>
 <ul>
-  <li>...via email: <a href="mailto:me@severen.dev">me@severen.dev</a></li>
+  <li>...via email: <a href="mailto:sev@severen.dev">sev@severen.dev</a></li>
   <li>...via Matrix: @severen:mtrx.nz</li>
   <li>
     ...via Mastodon:
