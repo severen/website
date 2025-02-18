@@ -1,0 +1,114 @@
+---
+// SPDX-FileCopyrightText: 2025 Severen Redwood <sev@severen.dev>
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The personal website of Severen Redwood."
+    />
+    <meta name="author" content="Severen Redwood" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    /* These colours are lifted from Catppuccin Latte. */
+    --background-color: oklch(95.78% 0.0058 264.53);
+    --text-color: oklch(43.55% 0.043 279.33);
+    --accent-color: oklch(66.38% 0.1751 273.13);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* These colours are lifted from Catppuccin Mocha. */
+      --background-color: oklch(24.29% 0.0304 283.91);
+      --text-color: oklch(87.87% 0.0426 272.28);
+      --accent-color: oklch(76.64% 0.1113 259.88);
+    }
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  main {
+    margin: auto;
+    max-width: 65ch;
+
+    padding: 1rem;
+  }
+
+  p {
+    hyphens: auto;
+    text-align: justify;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+
+    border-radius: 6px;
+
+    transition-property: background;
+    transition-duration: 0.2s;
+
+    &:hover {
+      background: oklch(from var(--accent-color) l c h / 0.2);
+    }
+
+    &:active {
+      color: var(--accent-color);
+    }
+
+    &:after {
+      position: relative;
+      top: -0.1em;
+
+      margin-left: 0.1em;
+
+      content: "\feff°";
+      font-size: 90%;
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    body {
+      font-size: 1.25rem;
+    }
+  }
+</style>
