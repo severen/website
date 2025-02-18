@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2025 Severen Redwood <sev@severen.dev>
+# SPDX-License-Identifier: CC0-1.0
+
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      npm:
+        patterns:
+          - "*"
