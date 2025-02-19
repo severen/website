@@ -16,6 +16,7 @@
     "typescript": "^5.7.3"
   },
   "devDependencies": {
+    "lightningcss": "^1.29.1",
     "prettier": "^3.5.1",
     "prettier-plugin-astro": "^0.14.1"
   },
@@ -24,5 +25,15 @@
       "esbuild",
       "sharp"
     ]
-  }
+  },
+  "browserslist": [
+    "Chrome > 0 and last 2 years",
+    "ChromeAndroid > 0 and last 2 years",
+    "Edge > 0 and last 2 years",
+    "Firefox > 0 and last 2 years",
+    "FirefoxAndroid > 0 and last 2 years",
+    "Safari > 0 and last 2 years",
+    "iOS > 0 and last 2 years",
+    "not dead"
+  ]
 }
