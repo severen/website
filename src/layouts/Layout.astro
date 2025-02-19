@@ -59,10 +59,39 @@ const { title } = Astro.props;
       oklch(55.05% 0.2155 19.81deg),
       oklch(75.56% 0.1297 2.76deg)
     );
+    --scrollbar-width: 8px;
   }
 
   html {
     box-sizing: border-box;
+
+    @supports not selector(::-webkit-scrollbar) {
+      scrollbar-width: var(--scrollbar-width);
+      scrollbar-color: var(--accent-color-1) transparent;
+    }
+  }
+
+  @supports selector(::-webkit-scrollbar) {
+    ::-webkit-scrollbar {
+      width: var(--scrollbar-width);
+    }
+
+    ::-webkit-scrollbar-track-piece {
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: var(--accent-color-1);
+
+      &:hover {
+        background-color: oklch(from var(--accent-color-1) calc(0.9 * l) c h);
+      }
+
+      &:active {
+        background-color: oklch(from var(--accent-color-1) calc(0.7 * l) c h);
+      }
+    }
   }
 
   *,
