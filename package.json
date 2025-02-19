@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check && stylelint '**/*.{css,astro}'",
+    "check": "prettier --check . && astro check && stylelint '**/*.{css,astro}'",
     "format": "prettier --write ."
   },
   "dependencies": {
