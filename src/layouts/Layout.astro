@@ -36,6 +36,7 @@ const { title } = Astro.props;
     /* These colours are lifted from Catppuccin Latte. */
     --background-color: oklch(95.78% 0.0058 264.53);
     --text-color: oklch(43.55% 0.043 279.33);
+    --overlay-color: oklch(60.09% 0.0305 278.69);
     --accent-color: oklch(66.38% 0.1751 273.13);
   }
 
@@ -44,6 +45,7 @@ const { title } = Astro.props;
       /* These colours are lifted from Catppuccin Mocha. */
       --background-color: oklch(24.29% 0.0304 283.91);
       --text-color: oklch(87.87% 0.0426 272.28);
+      --overlay-color: oklch(68.65% 0.0374 274.73);
       --accent-color: oklch(76.64% 0.1113 259.88);
     }
   }
@@ -56,6 +58,10 @@ const { title } = Astro.props;
   *:before,
   *:after {
     box-sizing: inherit;
+  }
+
+  *::selection {
+    background-color: oklch(from var(--overlay-color) l c h / 0.3);
   }
 
   body {
