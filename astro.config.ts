@@ -4,6 +4,7 @@
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
+  site: "https://severen.dev",
   vite: {
     css: {
       transformer: "lightningcss",
