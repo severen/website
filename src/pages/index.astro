@@ -2,19 +2,20 @@
 // SPDX-FileCopyrightText: 2025 Severen Redwood <sev@severen.dev>
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-import Layout from "../layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
+import Link from "@components/Link.astro";
 ---
 
 <Layout title="Severen Redwood">
   <h1>Welcome, traveller!</h1>
   <p>
     Who am I, you ask? While this site is under construction, my
-    <a href="https://github.com/severen">GitHub profile</a> likely holds the answer
-    you seek. Be assured that a beautiful website with lots of content is on the
-    horizon (reportedly).
+    <Link href="https://github.com/severen">GitHub profile</Link> likely holds the
+    answer you seek. Be assured that a beautiful website with lots of content is
+    on the horizon (reportedly).
   </p>
   <p>
     Want to get in touch? Send an email to
-    <a href="mailto:sev@severen.dev">sev@severen.dev</a> and I just might respond.
+    <Link href="mailto:sev@severen.dev">sev@severen.dev</Link> and I just might respond.
   </p>
 </Layout>

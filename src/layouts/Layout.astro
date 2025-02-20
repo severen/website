@@ -51,9 +51,13 @@ const { title } = Astro.props;
       oklch(60.09% 0.0305 278.69deg),
       oklch(68.65% 0.0374 274.73deg)
     );
-    --accent-color: light-dark(
+    --accent-color-1: light-dark(
       oklch(66.38% 0.1751 273.13deg),
       oklch(76.64% 0.1113 259.88deg)
+    );
+    --accent-color-2: light-dark(
+      oklch(55.05% 0.2155 19.81deg),
+      oklch(75.56% 0.1297 2.76deg)
     );
   }
 
@@ -91,26 +95,6 @@ const { title } = Astro.props;
   a {
     color: inherit;
     text-decoration: inherit;
-    border-radius: 6px;
-    transition-property: background;
-    transition-duration: 0.2s;
-
-    &:hover {
-      background: oklch(from var(--accent-color) l c h / 20%);
-    }
-
-    &:active {
-      color: var(--accent-color);
-    }
-
-    &::after {
-      position: relative;
-      top: -0.1em;
-      margin-left: 0.1em;
-      color: var(--accent-color);
-      content: "\2060°";
-      font-size: 90%;
-    }
   }
 
   /* Desktop */
