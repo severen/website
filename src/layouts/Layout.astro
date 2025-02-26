@@ -68,8 +68,16 @@ const { title } = Astro.props;
 
   html {
     box-sizing: border-box;
+  }
 
-    @supports not selector(::-webkit-scrollbar) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    html {
       scrollbar-width: var(--scrollbar-width);
       scrollbar-color: var(--accent-color-1) transparent;
     }
@@ -98,12 +106,6 @@ const { title } = Astro.props;
     }
   }
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-
   *::selection {
     background-color: oklch(from var(--overlay-color) l c h / 30%);
   }
@@ -112,6 +114,11 @@ const { title } = Astro.props;
     font-family: ui-sans-serif, system-ui, sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
+
+    /* Desktop */
+    @media (width >= 1024px) {
+      font-size: 1.25rem;
+    }
   }
 
   main {
@@ -128,12 +135,5 @@ const { title } = Astro.props;
   a {
     color: inherit;
     text-decoration: inherit;
-  }
-
-  /* Desktop */
-  @media (width >= 1024px) {
-    body {
-      font-size: 1.25rem;
-    }
   }
 </style>
