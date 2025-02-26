@@ -2,6 +2,9 @@
 // SPDX-FileCopyrightText: 2025 Severen Redwood <sev@severen.dev>
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+import "@fontsource-variable/inter";
+import interWoff2 from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
+
 interface Props {
   title: string;
 }
@@ -20,6 +23,13 @@ const { title } = Astro.props;
     <meta name="author" content="Severen Redwood" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={interWoff2}
+      crossorigin="anonymous"
+    />
 
     <title>{title}</title>
   </head>
@@ -111,7 +121,7 @@ const { title } = Astro.props;
   }
 
   body {
-    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-family: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
 
