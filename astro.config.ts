@@ -5,6 +5,14 @@ import { defineConfig } from "astro/config";
 
 export default defineConfig({
   site: "https://severen.dev",
+  markdown: {
+    shikiConfig: {
+      themes: {
+        light: "catppuccin-latte",
+        dark: "catppuccin-mocha",
+      },
+    },
+  },
   vite: {
     css: {
       transformer: "lightningcss",
