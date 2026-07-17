@@ -23,12 +23,6 @@
     "stylelint-config-standard": "^40.0.0",
     "typescript": "^6.0.3"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp"
-    ]
-  },
   "browserslist": [
     "Chrome > 0 and last 2 years",
     "ChromeAndroid > 0 and last 2 years",
