@@ -1,9 +1,0 @@
-{
-  "contacts": [
-    {
-      "email_address": "sev@severen.dev",
-      "matrix_id": "@severen:severen.dev",
-      "role": "m.role.admin"
-    }
-  ]
-}
